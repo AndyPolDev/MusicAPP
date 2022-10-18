@@ -40,7 +40,7 @@ class AuthViewController: UIViewController {
         return textField
     }()
     
-    private let signUpButton: UIButton = {
+    private lazy var signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1)
         button.setTitle("SignUP", for: .normal)
@@ -51,7 +51,7 @@ class AuthViewController: UIViewController {
         return button
     }()
     
-    private let signInButton: UIButton = {
+    private lazy var signInButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .black
         button.setTitle("SignIN", for: .normal)

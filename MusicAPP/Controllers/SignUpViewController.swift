@@ -109,7 +109,7 @@ class SignUpViewController: UIViewController {
         return label
     }()
     
-    private let signUpButton: UIButton = {
+    private lazy var signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .black
         button.setTitle("SignUp", for: .normal)
